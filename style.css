@@ -4,6 +4,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-image: url("images/bg.svg");
 }
 
 .container {
@@ -29,4 +30,10 @@ body {
 .col-6 {
     flex: 0 0 40%;
     max-width: 40%;
+}
+
+.header {
+    height: 200px;
+    display: flex;
+    align-items: center;
 }
