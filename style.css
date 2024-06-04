@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    padding: o 15px;
+}
+
+.row {
+    display: flex;
+    margin: 0 -15px;
+}
+
+[class*="col-"] {
+    padding: 0 15px;
+}
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.col-6 {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
