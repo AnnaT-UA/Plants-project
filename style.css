@@ -1,10 +1,15 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     background-image: url("images/bg.svg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -36,6 +41,8 @@ body {
     height: 200px;
     display: flex;
     align-items: center;
+    position: fixed;
+    padding: 0 8%;
 }
 
 .menu {
@@ -61,4 +68,24 @@ body {
 .menu a:hover {
     background-color: hsl(120, 62%, 39%);
     color: black;
+}
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: lightgreen;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0,.1);
+}
+
+nav ul li ul li ul {
+    left: 180px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
 }
