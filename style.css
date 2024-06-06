@@ -15,7 +15,7 @@ body {
 .container {
     width: 1920px;
     margin: 0 auto;
-    padding: o 15px;
+    padding: 0 15px;
 }
 
 .row {
@@ -65,27 +65,31 @@ body {
 
 }
 
-.menu a:hover {
-    background-color: hsl(120, 62%, 39%);
+header nav ul li a:hover {
+    background-color: hsl(120, 81%, 25%);
     color: black;
 }
+
 nav ul li ul {
     position: absolute;
     left: 0;
     width: 180px;
-    background: lightgreen;
-}
-
-nav ul li ul li {
-    width: 100%;
+    background: #ffffff;
+    width: 50%;
     border: 1px solid rgba(0, 0, 0,.1);
-}
-
-nav ul li ul li ul {
-    left: 180px;
-    top: 0;
+    display: none;
 }
 
 nav ul li:hover > ul {
     display: initial;
 }
+
+.call {
+    text-align: center;
+    background-color: hsl(0, 27%, 96%);
+    color: green;
+    block-size: 50 px;
+    width: 80px;
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
