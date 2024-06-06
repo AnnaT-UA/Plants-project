@@ -72,12 +72,15 @@ header nav ul li a:hover {
 
 nav ul li ul {
     position: absolute;
-    left: 0;
-    width: 180px;
+    width: 30%;
     background: #ffffff;
-    width: 50%;
     border: 1px solid rgba(0, 0, 0,.1);
     display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0,.1);
 }
 
 nav ul li:hover > ul {
@@ -92,4 +95,5 @@ nav ul li:hover > ul {
     width: 80px;
     flex: 0 0 40%;
     max-width: 40%;
+    image-orientation: from-image;
   }
