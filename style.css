@@ -2,17 +2,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
   }
 
   body {
-    font-family: "Roboto", sans-serif;
-    background: radial-gradient(white, #7dbcff);
+    background: radial-gradient(white, rgb(96, 236, 133));
     height: 100vh;
     background-size: cover;
     background-position: center;
   }
   
-  .container {
+  .container1 {
     max-width: 1920px;
     margin: 0 auto;
     padding: 0 15px;
@@ -27,10 +27,81 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
+    padding: 10px 15px;
   }
 
-  .container {
+  .btn-email {
+    width: 30px;
+    height: 20px;
+    margin: 5px;
+    position: relative;
+    float: left;
+  } 
+
+  header .logo {
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+  }
+
+  .logo:hover {
+    transform: scale(2,3);
+  }
+
+  .container2 {
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1920px;
+    width: 100%;
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  header nav ul li {
     position: relative;
     float: left;
   }
+
+  header nav ul li a {
+    padding: 15px;
+    color: #f4f5f3;
+    font-size: 16px;
+    display: block;
+    position: relative;
+    float: left;
+    text-decoration: none;
+  }
+  header nav ul li a:hover {
+    background: greenyellow;
+    color: black;
+  }
+  nav ul li ul {
+  position: relative;
+  left: 0;
+  width: 180px;
+  background: #f4f5f3;
+  display: none;
+}
+
+  nav ul li ul li {
+  width: 100%;
+  border: 1px solid rgb(0, 0, 0,.1);
+  position: relative;
+  display: none;
+}
+
+
+  nav ul li ul li ul {
+  left: 180px;
+  top: 0;
+  display: none;
+}
+
+
+  nav ul li:hover > ul {
+  display: initial;
+}
